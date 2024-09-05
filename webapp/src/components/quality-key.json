@@ -1,0 +1,22 @@
+{
+  "monitoring_well_id": "监测井编号",
+  "well_depth_m": "井深/m",
+  "well_diameter_mm": "井管直径/mm",
+  "water_level_m": "水位/m",
+  "color": "颜色",
+  "odor": "气味",
+  "inspection_time": "核查时间",
+  "longitude": "经度",
+  "latitude": "纬度",
+  "obvious_pollution_traces": "明显污染痕迹",
+  "well_platform_height_m": "井台高度/m",
+  "well_pipe_material": "井管材质",
+  "water_level_meter_reading_m": "水位计读数/m",
+  "foreign_objects": "异物",
+  "pH_value": "pH 值",
+  "conductivity_us_cm": "电导率（us/cm）",
+  "temperature_C": "温度（℃）",
+  "dissolved_oxygen_mg_L": "溶解氧（mg/L）",
+  "oxidation_reduction_potential_mV": "氧化还原电位（mV）",
+  "turbidity_NTU": "浊度（NTU）"
+}

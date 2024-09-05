@@ -1,15 +1,17 @@
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-  <MapComponent/>
+  <MapComponentV2/>
 </template>
 
 <script>
-import MapComponent from './components/MapComponent.vue';
+// import MapComponent from './components/MapComponent.vue';
+import MapComponentV2 from './components/DragableMapComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    MapComponent
+    // MapComponent,
+    MapComponentV2,
   }
 }
 </script>
@@ -21,6 +23,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
