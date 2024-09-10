@@ -17,7 +17,7 @@
 <script>
 /* global AMap */
 import { ref, onMounted } from 'vue';
-import supervsionData from './supervison-data.json';
+import supervsionData from './supervision-data.json';
 import PopupComponent from './PopupComponent.vue';
 
 export default {

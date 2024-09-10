@@ -52,14 +52,19 @@ def transform_data(data_list):
 # 检查文件是否存在
 if os.path.exists(file_path):
     # 读取 Excel 文件
-    df = pd.read_excel(file_path)
+    df = pd.read_excel(file_path, na_values=["", "NA", None])
 
     # 替换列名
     df.rename(columns=column_mapping, inplace=True)
+        # 使用 replace 全局替换 NaN 为 None
+    df = df.replace({pd.NA: None, pd.NaT: None, float('nan'): None})
+
+    # 强制转换所有列为标准 Python 数据类型
+    df = df.astype(object).where(pd.notnull(df), None)
     data_list = df.to_dict(orient='records')
     transformed_data = transform_data(data_list)
 
-    output_file='test.json'
+    output_file='supervision-data.json'
         # Write the transformed data to a new JSON file
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(transformed_data, f, ensure_ascii=False, indent=2)
