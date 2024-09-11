@@ -33,7 +33,12 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "no-debugger": [
+        0,
+        "always"
+      ]
+    }
   },
   "browserslist": [
     "> 1%",
